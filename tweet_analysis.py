@@ -11,10 +11,10 @@ class SentimentAnalysis:
 
     def DownloadData(self):
         # authenticating
-        consumerKey = 'BypBHBfhZST2Ub2EmphWqu3rO'
-        consumerSecret = 'X2YBquvXjDPkNZ2igTzG4p5pKOmf87rLz7SPbt8FSbz6bQvvH3'
-        accessToken = '1151498810482294785-p1D1HbvBus4s4FK8efPNvSFvBh25sH'
-        accessTokenSecret = 'IGSRR3GUJlxof61YbRboYK7L6bEOLCjYWtHLyfVS3FTzH'
+        consumerKey = ''
+        consumerSecret = ''
+        accessToken = ''
+        accessTokenSecret = ''
         auth = tweepy.OAuthHandler(consumerKey, consumerSecret)
         auth.set_access_token(accessToken, accessTokenSecret)
         api = tweepy.API(auth)
@@ -138,29 +138,9 @@ class SentimentAnalysis:
         plt.axis('equal')
         plt.tight_layout()
         plt.show()
-        
-        
-        
-        #plt.plot([3,1,4,1,5], 'ks-', mec='w', mew=5, ms=20)
-        #mpld3.enable_notebook()
-        #mpld3.show()
-
-
+          
 
 if __name__== "__main__":
     sa = SentimentAnalysis()
     sa.DownloadData()
     
-
-
-
-
-
-
-
-
-
-
-
-
-
